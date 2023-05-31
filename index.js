@@ -26,3 +26,23 @@ selectedColors.push('green');
 console.log(selectedColors);
 selectedColors.push(1);
 console.log(selectedColors);
+
+
+function createPerson(idValue, nameValue, urlValue, dateValue) {
+    //body
+    person.id = idValue;
+    person.name = nameValue;
+    person.url = urlValue;
+    person.date = dateValue;
+
+}
+
+createPerson(2, 'Frank', 'Gato.com', '2023-10-10T17:45:00');
+console.log(person);
+
+function square (number){
+    return number * number;
+}
+
+
+console.log(square(2));
