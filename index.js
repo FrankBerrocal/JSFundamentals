@@ -96,7 +96,7 @@ let z = 1;
 
 //Ternary
  let points = 110;
- let type = points > 100 ? 'gold' : 'silver';  //equivalent of if conditional. 
+ let type = points > 100 ? 'gold' : 'silver';  //equivalent of if conditional.    I need to use this in a program.
 // // ? then, : otherwise
 // //if points greater than 100 then gold else silver
  console.log(type);
@@ -158,3 +158,47 @@ let swapColorB = b === 'blue' ? 'red' : 'blue';
 a = swapColorA;
 b = swapColorB;
 console.log(a+' '+b);
+
+//Control Flow
+//Conditional statements
+//If else
+
+let hour = 10;
+
+if (hour > 6 && hour < 12){
+  console.log('Good Morning');
+}
+else if (hour >= 12 && hour < 18){
+  console.log('Good Afternoon');
+}
+else{
+  console.log('Good early Morning');
+}
+
+//switch
+
+let role;
+
+role = 'guest';
+
+switch(role){
+  case 'guest' : 
+    console.log('You are a guest');
+    break;
+
+  case 'admin' : 
+    console.log('You are a admin');
+    break;
+
+  case 'user' : 
+    console.log('You are a user');
+    break;
+
+  default:  
+    console.log('You dont have access'); 
+}
+
+if(role === 'guest') console.log('You are a guest');
+else if (role === 'admin') console.log('You are a admin');
+else if (role === 'user') console.log('You are a user');
+else console.log('You dont have access'); 
