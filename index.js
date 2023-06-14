@@ -236,9 +236,27 @@ for (let key in person2) {
   console.log(person2[key]);
 }
 
+
+//array
 let colors = ['red', 'blue', 'green'];
 
 //for of
 for (const key of colors) {
   console.log(key);
+}
+
+// break and continue
+for (let index = 1; index <= 10; index++) {
+  if(index===5) break;
+  console.log(index);
+}
+
+//when even number found, do not display it
+for (let index = 1; index <= 10; index++) {
+  if(index%2===0) {
+    continue;
+    index++;
+  }
+  console.log(index);
+
 }
