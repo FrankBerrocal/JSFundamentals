@@ -260,3 +260,40 @@ for (let index = 1; index <= 10; index++) {
   console.log(index);
 
 }
+
+
+let numero1 = 10;
+let numero2 = 5;
+
+maxNumber(5, 10);
+//function that returns max of two numbers
+function maxNumber(a, b){
+  let numbers =[];
+  numbers.push(a);
+  numbers.push(b);
+  let max = Math.max(...numbers);
+  console.log('Max number is ', max)
+}
+
+maxNumberloop(5, 10);
+function maxNumberloop(a, b){
+  let temp = 0;
+    if(a > b){
+      console.log('Max is ', a);
+    }else{
+      console.log('Max is ', b);
+    }
+}
+
+console.log(maxReduced(5, 10));
+function maxReduced(a, b){
+  if(a > b) return a
+  else return b
+}
+
+let number = maxTernary(5, 10);
+console.log(number);
+
+function maxTernary(a, b){
+  return (a>b) ? a : b;
+}
