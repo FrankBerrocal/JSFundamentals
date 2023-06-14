@@ -198,7 +198,14 @@ switch(role){
     console.log('You dont have access'); 
 }
 
+
+//This looks more organized and has less lines.
 if(role === 'guest') console.log('You are a guest');
 else if (role === 'admin') console.log('You are a admin');
 else if (role === 'user') console.log('You are a user');
 else console.log('You dont have access'); 
+
+//For Loop
+for (let i = 1; i <= 5; i++) {
+  if(i%2!==0) console.log("hello", i)
+}
