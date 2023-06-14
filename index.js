@@ -209,3 +209,17 @@ else console.log('You dont have access');
 for (let i = 1; i <= 5; i++) {
   if(i%2!==0) console.log("hello", i)
 }
+
+//While loops
+
+let i = 0;
+while (i < 5) {
+  if(i%2!==0) console.log("hello", i)
+  i++;
+}
+
+let j=1;
+do {
+  if(j%2!==0) console.log("hello", j)
+  j++;
+} while (j <= 5);
