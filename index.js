@@ -223,3 +223,22 @@ do {
   if(j%2!==0) console.log("hello", j)
   j++;
 } while (j <= 5);
+
+//iterate properties in an object or elements in an array
+
+const person2 = {
+  name: 'Frank',
+  lastName: 'Berrocal'
+};
+
+//for in
+for (let key in person2) {
+  console.log(person2[key]);
+}
+
+let colors = ['red', 'blue', 'green'];
+
+//for of
+for (const key of colors) {
+  console.log(key);
+}
